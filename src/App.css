@@ -27,20 +27,13 @@ label {
   font-weight: bold;
   padding: 10px 10px;
   color: #9ebfcb;
+  margin-left: 50px;
 }
 .content {
   display: flex;
+  justify-content: space-around;
 }
-a {
-  height: 20px;
-  width: auto;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 30px;
-  text-decoration: none;
-  border-radius: 12px;
-  border-color: black;
-}
+
 button {
   height: 120px;
   width: 200px;
