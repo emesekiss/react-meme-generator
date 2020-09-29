@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import './App.css';
-import Header from './Header';
 import axios from 'axios';
+
+import Header from './Header';
+import './App.css';
 
 function getRandomInt(min, max) {
   min = Math.ceil(min);
