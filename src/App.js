@@ -54,29 +54,31 @@ function App() {
     <div className="react-root">
       <Header />
       <div className="content">
-        <img
-          src={
-            line1 || line2 ? `${image.slice(0, -4)}/${line1}/${line2}` : image
-          }
-          alt="meme"
-        />
-        <button onClick={handleChangeMeme}>Change Meme</button>
-        <button onClick={downloadMeme}>Click to Download Meme</button>
-      </div>
-      <div>
-        <div className="lines">
-          <label htmlFor="line1">Line 1 </label>
-          <input
-            id="line1"
-            value={line1}
-            onChange={(e) => setLine1(e.target.value)}
+        <div>
+          <img
+            src={
+              line1 || line2 ? `${image.slice(0, -4)}/${line1}/${line2}` : image
+            }
+            alt="meme"
           />
-          <label htmlFor="line2">Line 2</label>
-          <input
-            id="line2"
-            value={line2}
-            onChange={(e) => setLine2(e.target.value)}
-          />
+          <div className="lines">
+            <label htmlFor="line1">Line 1 </label>
+            <input
+              id="line1"
+              value={line1}
+              onChange={(e) => setLine1(e.target.value)}
+            />
+            <label htmlFor="line2">Line 2</label>
+            <input
+              id="line2"
+              value={line2}
+              onChange={(e) => setLine2(e.target.value)}
+            />
+          </div>
+        </div>
+        <div>
+          <button onClick={handleChangeMeme}>CHANGE MEME</button>
+          <button onClick={downloadMeme}>CLICK TO DOWNLOAD</button>
         </div>
       </div>
     </div>

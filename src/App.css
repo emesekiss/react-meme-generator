@@ -6,40 +6,53 @@
 }
 
 img {
-  max-width: 400px;
-  justify-content: center;
-  display: flex;
+  width: 200px;
   padding: 0px 20px 20px;
 }
 Header {
   text-align: center;
   font-size: 50px;
-  color: #9ebfcb;
+  color: #204452;
   font-style: bold;
   padding: 20px 30px;
 }
 input {
-  width: 10%;
   font-size: 20px;
+  border: 1px solid #204452;
+  border-radius: 5px;
+  padding: 5px 10px;
 }
 label {
   font-size: 20px;
-  font-weight: bold;
   padding: 10px 10px;
-  color: #9ebfcb;
+  color: #204452;
   margin-left: 50px;
 }
 .content {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column-reverse;
+  align-items: center;
 }
-
+.lines {
+  display: flex;
+  flex-direction: column;
+}
 button {
-  height: 120px;
-  width: 200px;
   cursor: pointer;
-  border-radius: 12px;
-  font-size: 30px;
-  color: #8cb5c4;
-  font-weight: bold;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #204452;
+  margin: 5px;
+  padding: 5px 10px;
+  display: block;
+  border: 1px solid #204452;
 }
+@media screen and (min-width: 768px) {
+  .content {
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  img {
+    width: 300px;
+  }
+} ;
